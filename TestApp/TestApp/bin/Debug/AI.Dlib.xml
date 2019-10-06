@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AI.Dlib</name>
+    </assembly>
+    <members>
+        <member name="T:AI.Dlib.FaceData">
+            <summary>
+            Обработка фотографий содержащих лицо
+            </summary>
+        </member>
+        <member name="M:AI.Dlib.FaceData.#ctor">
+            <summary>
+            Инициализация faceData
+            </summary>
+        </member>
+        <member name="M:AI.Dlib.FaceData.#ctor(System.String)">
+            <summary>
+            Инициализация faceData
+            </summary>
+            <param name="pathToShapePredictor">путь до Shape Predictor</param>
+        </member>
+        <member name="M:AI.Dlib.FaceData.GetFace(System.Drawing.Bitmap)">
+            <summary>
+            Выдает изображение лица
+            </summary>
+            <param name="bmp">Исходное изображение</param>
+            <returns></returns>
+        </member>
+        <member name="M:AI.Dlib.FaceData.GetFacePointBmp(System.Drawing.Bitmap)">
+            <summary>
+            Выдает картинку с отмеченными и подписанными точками
+            </summary>
+            <param name="bitmap">Исходное изображение</param>
+            <returns></returns>
+        </member>
+        <member name="M:AI.Dlib.FaceData.GetFaceMask(System.Drawing.Bitmap,System.Boolean)">
+            <summary>
+            Рисует маску поверх лица, или на чистом фоне
+            </summary>
+            <param name="bitmap">Исходное изображение</param>
+            <param name="isClear">Маску рисовать на чистом фоне? </param>
+            <returns></returns>
+        </member>
+        <member name="M:AI.Dlib.FaceData.GetRegionFace(System.Drawing.Bitmap)">
+            <summary>
+            Выдает регион с изображением лица
+            </summary>
+            <param name="bmp">Исходное изображение</param>
+            <returns></returns>
+        </member>
+        <member name="M:AI.Dlib.FaceData.GetBmpWithRegionFace(System.Drawing.Bitmap)">
+            <summary>
+            Возвращает исходное изображение с отмеченным лицом
+            </summary>
+            <param name="bmp">Исходное изображение</param>
+            <returns></returns>
+        </member>
+        <member name="M:AI.Dlib.FaceData.GetFacePoints(System.Drawing.Bitmap)">
+            <summary>
+            Выдает массив точек лица
+            </summary>
+            <param name="bitmap">Исходное изображение</param>
+            <returns></returns>
+        </member>
+        <member name="M:AI.Dlib.FaceData.AccurateFaceDetection(System.Drawing.Bitmap)">
+            <summary>
+            Выдает регион с изображением лица(Повышенная точность)
+            </summary>
+            <param name="bmp">Исходное изображение</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
