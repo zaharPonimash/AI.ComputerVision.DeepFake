@@ -9,6 +9,12 @@ DeepFake на языке C#
 
 Библиотеки: https://github.com/aiframesharp/AIFrameSharpNonCommercialRus
 
+
+Статьи:
+* DeepFake своими руками [часть 1]: https://habr.com/ru/post/470323
+
+
+Проект, каким я вдохновляюсь: https://github.com/MarekKowalski/FaceSwap
 ---
 
 * Исходное изображение:
