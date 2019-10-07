@@ -15,6 +15,7 @@ DeepFake на языке C#
 
 
 Проект, каким я вдохновляюсь: https://github.com/MarekKowalski/FaceSwap
+
 ---
 
 * Исходное изображение:
