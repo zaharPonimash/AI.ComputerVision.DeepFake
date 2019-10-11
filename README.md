@@ -3,7 +3,7 @@ DeepFake на языке C#
 
 
 * Изображение мужчины взято с [этого](https://generated.photos) проекта.
-* Картина " [Caballero de la mano en el pecho](https://ru.m.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:El_caballero_de_la_mano_en_el_pecho.jpg) ": 
+* Картина "[Caballero de la mano en el pecho](https://ru.m.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:El_caballero_de_la_mano_en_el_pecho.jpg)": 
 * [Библиотеки](https://github.com/aiframesharp/AIFrameSharpNonCommercialRus)
 * [Проект, каким я вдохновляюсь](https://github.com/MarekKowalski/FaceSwap)
 
