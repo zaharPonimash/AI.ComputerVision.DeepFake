@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Diagnostics;
 
 namespace AI.ComputerVision.DeepFake.Core
 {
@@ -40,16 +37,14 @@ namespace AI.ComputerVision.DeepFake.Core
             return bitmap;
         }
 
-
-        static int coef(Vector centr, int i, int j, double h, double w)
+        private static int coef(Vector centr, int i, int j, double h, double w)
         {
             double r = Math.Pow(Math.Pow((centr[0] - i) / (1.2*w), 2) + Math.Pow((centr[1] - j) / h, 2), 3);
             r = Math.Exp(-190 * r);
             return (int)(255 * r);
         }
 
-
-        static Rectangle GetRectangleMask(Bitmap mask)
+        private static Rectangle GetRectangleMask(Bitmap mask)
         {
 
             Matrix matr = ImgConverter.BmpToMatr(mask);
@@ -61,16 +56,24 @@ namespace AI.ComputerVision.DeepFake.Core
                 for (int j = startY; j < endY; j++)
                 {
                     if (matr[j, i-1] < 0.1 && matr[j, i] > 0.1)
+                    {
                         startX = i;
+                    }
+
                     if (matr[j, i - 1] > 0.1 && matr[j, i] < 0.1)
                     {
                         endX = i;
                         goto r;
                     } 
                     if (matr[j-1, i] < 0.1 && matr[j, i] > 0.1)
+                    {
                         startY = j;
+                    }
+
                     if (matr[j-1, i] > 0.1 && matr[j, i] < 0.1)
+                    {
                         endY = j;
+                    }
                 }
             }
 
@@ -114,8 +117,16 @@ namespace AI.ComputerVision.DeepFake.Core
 
             tensor = tensor.TransformTensor(x =>
             {
-                if (x < 0) x = 0;
-                if (x > 1) x = 1;
+                if (x < 0)
+                {
+                    x = 0;
+                }
+
+                if (x > 1)
+                {
+                    x = 1;
+                }
+
                 return x;
             });
 

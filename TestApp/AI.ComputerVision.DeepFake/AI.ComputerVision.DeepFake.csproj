@@ -33,6 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AI, Version=1.0.7218.26699, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AI.dll</HintPath>
+    </Reference>
+    <Reference Include="AI.Dlib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AI.Dlib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -47,16 +55,6 @@
     <Compile Include="Core\ImgProcessing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReplFaceImg.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\source\repos\DlibTestApp\AI.Dlib\AI.Dlib.csproj">
-      <Project>{82d6aef9-2245-400e-aaab-0145cde56524}</Project>
-      <Name>AI.Dlib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\AIFrameSharp\AI.Fram\Very Light\Sourse\AI.MathMod 2.0\AI.csproj">
-      <Project>{df41fbb8-cbf9-4e1a-bb07-30d678991734}</Project>
-      <Name>AI</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

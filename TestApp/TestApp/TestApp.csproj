@@ -36,6 +36,14 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AI, Version=1.0.7218.26699, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AI.ComputerVision.DeepFake\bin\Debug\AI.dll</HintPath>
+    </Reference>
+    <Reference Include="AI.Dlib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AI.ComputerVision.DeepFake\bin\Debug\AI.Dlib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -84,14 +92,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\source\repos\DlibTestApp\AI.Dlib\AI.Dlib.csproj">
-      <Project>{82d6aef9-2245-400e-aaab-0145cde56524}</Project>
-      <Name>AI.Dlib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\AIFrameSharp\AI.Fram\Very Light\Sourse\AI.MathMod 2.0\AI.csproj">
-      <Project>{df41fbb8-cbf9-4e1a-bb07-30d678991734}</Project>
-      <Name>AI</Name>
-    </ProjectReference>
     <ProjectReference Include="..\AI.ComputerVision.DeepFake\AI.ComputerVision.DeepFake.csproj">
       <Project>{e1512da9-abfa-4d01-b5a1-c5e91064e09c}</Project>
       <Name>AI.ComputerVision.DeepFake</Name>
